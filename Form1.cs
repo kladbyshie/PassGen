@@ -52,6 +52,7 @@ namespace PassGen
                 int b = Convert.ToInt32(d);
                 newpass += b;
             }
+            //This creates a new seed from the combination of the core name and the seed value and creates a random object.
             Random rand = new Random(newpass);
             string password = String.Empty;
             for (int e = 0; e < Convert.ToInt32(CharCount); e++)
@@ -85,6 +86,7 @@ namespace PassGen
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //These are defaults; they should be changed per execution. 
             seedField.Text = "DefaultSeed";
             charField.Text = "10";
             nameField.Select();

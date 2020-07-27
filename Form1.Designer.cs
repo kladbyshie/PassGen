@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.nameField = new System.Windows.Forms.TextBox();
             this.seedField = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
@@ -121,6 +120,7 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.generateButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 180);
@@ -133,7 +133,6 @@
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.seedField);
             this.Controls.Add(this.nameField);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "PassGen";
             this.Load += new System.EventHandler(this.Form1_Load);
