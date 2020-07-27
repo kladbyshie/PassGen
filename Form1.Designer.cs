@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.nameField = new System.Windows.Forms.TextBox();
             this.seedField = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
@@ -52,7 +53,7 @@
             this.seedField.Location = new System.Drawing.Point(219, 47);
             this.seedField.Name = "seedField";
             this.seedField.Size = new System.Drawing.Size(102, 27);
-            this.seedField.TabIndex = 0;
+            this.seedField.TabIndex = 1;
             this.seedField.TextChanged += new System.EventHandler(this.seedField_TextChanged);
             // 
             // nameLabel
@@ -78,7 +79,7 @@
             this.passField.Location = new System.Drawing.Point(42, 115);
             this.passField.Name = "passField";
             this.passField.Size = new System.Drawing.Size(373, 27);
-            this.passField.TabIndex = 0;
+            this.passField.TabIndex = 4;
             this.passField.TextChanged += new System.EventHandler(this.passField_TextChanged);
             // 
             // passwordLabel
@@ -106,7 +107,7 @@
             this.charField.Location = new System.Drawing.Point(327, 47);
             this.charField.Name = "charField";
             this.charField.Size = new System.Drawing.Size(88, 27);
-            this.charField.TabIndex = 0;
+            this.charField.TabIndex = 2;
             this.charField.TextChanged += new System.EventHandler(this.charField_TextChanged);
             // 
             // label1
@@ -133,6 +134,7 @@
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.seedField);
             this.Controls.Add(this.nameField);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "PassGen";
             this.Load += new System.EventHandler(this.Form1_Load);

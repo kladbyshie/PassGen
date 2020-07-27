@@ -41,7 +41,7 @@ namespace PassGen
         public void PassGen(string CoreName = "test", string Seed = "Test2", string CharCount = "10")
         {
             int newpass = 0;
-            char[] chararray = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?".ToArray();
+            char[] chararray = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToArray();
             foreach(char c in CoreName)
             {
                 int a = Convert.ToInt32(c);
