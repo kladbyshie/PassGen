@@ -1,7 +1,7 @@
 # PassGen
 Password generator based off name + seed (with GUI)
 
-Password generator written in C#, featuring a GUI. 
+Password generator written in C#, featuring a GUI. This is my first C# project.
 I'm not a cryptographic expert, so the actual "randomness" and "security" of the passwords from this generator is unknown.
 
 This app generates passwords from a name, a seed, and a number of chars. As long as these are the same, it will re-create the exact same password any number of times it is run (as those 3 create the seed for the random number generator, and thus, the password).
