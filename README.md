@@ -10,3 +10,5 @@ The big benefit of this is that if the user forgets their password, they can sim
 
 For example, I want to create a password for Facebook, my seed is Cookie, and I keep it at 10 chars. I enter the creds, and get "CbjhehZyrD" as the password.
 If I ever forget the password, I can re-enter the creds that created that same password (Facebook, Cookie, 10 chars), and regenerate the password perfectly. 
+
+The generator natively has at least one of the following characters: Uppercase letter, lowercase letter, number, and "special character" (right now, ! and ?). Most passwords, from what I've seen, have these requirements.
